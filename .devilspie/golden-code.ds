@@ -1,0 +1,78 @@
+; xlsclients -l
+; first sector
+
+(if 
+   (matches (window_name) ".+Visual Studio Code$")
+   (begin
+   (geometry "1187x1053+0+26")
+   (undecorate)
+   (focus)
+   )
+)
+
+; second sector
+
+(if 
+   (matches (window_name) "^Slack.+")
+   (begin
+   (geometry "733x658+1187+26")
+   (undecorate)
+   )
+)
+(if 
+   (matches (window_name) ".+Chromium$")
+   (begin
+   (geometry "733x658+1187+26")
+   (undecorate)
+   )
+)
+(if
+   (matches (application_name) "Terminal")
+   (begin
+   (decorate)
+   (geometry "735x638+1187+26")
+   )
+)
+
+
+; third sector
+
+(if 
+   (matches (window_name) "Bulletpad.+")
+   (begin
+   (geometry "451x395+1469+760")
+   (undecorate)
+   )
+)
+(if 
+   (matches (window_name) "Contrôle du volume")
+   (begin
+   (undecorate)
+   (geometry "451x395+1469+760")
+   )
+)
+(if 
+   (matches (window_name) "Developer Tools.+")
+   (begin
+   (decorate)
+   (geometry "451x395+1469+700")
+   )
+)
+(if 
+   (matches (window_name) "Zoom Meeting.+")
+   (begin
+   (decorate)
+   (geometry "451x319+1469+760")
+   )
+)
+
+
+; sector 4
+(if
+   (matches (window_name) "Rotor")
+   (begin
+   (geometry "120x60+1349+680")
+   (undecorate)
+   )
+)
+
