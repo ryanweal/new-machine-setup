@@ -10,6 +10,8 @@
   - tweak tool
   - gnome themes
   - git
+  - screen
+  - lightdm
 
 ## External Apps
 
@@ -37,4 +39,7 @@
 
  - set theme in tweak tool
  - add shortcut for terminal
- - add devilspie shortcut
+ - add devilspie shortcuts
+ - adjust code devilspie recipe
+ - adjust browser devilspie recipe
+ - configure DPI/pixel density 
