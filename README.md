@@ -4,9 +4,9 @@
 
   - Latest Ubuntu distribution
   - full disk encryption
-  - usb audio drivers
-  - bluetooth drivers
-  - powertop profile
+  - usb audio drivers (default install)
+  - bluetooth drivers (default install)
+  - powertop profile (manually generated)
   - hosts file
 
 ## Install packages
@@ -16,11 +16,12 @@
   - devilspie
   - nettools (for ifconfig)
   - gnome-shell
-  - tweak tool
+  - gnome-tweak-tool
   - gnome themes
   - git
   - screen
-  - lightdm
+  - lightdm (solves many rotation issues (and DPI?) on GPD Pocket and ASUS Transformer tablets)
+  - xcalib (invert screen colors to be used for keyboard shortcuts listed below)
 
 ## External Apps
 
