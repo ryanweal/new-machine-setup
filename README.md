@@ -47,7 +47,14 @@
 ## Configuration
 
  - set theme in tweak tool
- - add shortcut for terminal
+ - keyboard shorcuts:
+   - control-enter for terminal
+   - F4 xcalib -i -a
+   - F6 xrandr -o normal
+   - F7 xrandr -o right
+   - F8 pietime .devilspie/golden.ds
+   - F9 pietime .devilspie/golden-code.ds
+   - (not in use anymore - control-alt-super  i3lock -c 121212 -f)
  - add devilspie shortcuts
  - adjust code devilspie recipe
  - adjust browser devilspie recipe

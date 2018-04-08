@@ -1,0 +1,4 @@
+#!/bin/bash
+
+pkill -9 devilspie
+devilspie -a $1 &
