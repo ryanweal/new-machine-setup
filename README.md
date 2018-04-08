@@ -68,6 +68,10 @@
   - Click continue to accept in Ubuntu
   - Go to Network settings in Ubuntu 17.10 and enable Bluetooth slider
 
+Now your phone is your network proxy. It can route either wifi or LTE or whatever you happen to be connected to.
+
+I often use the phone to connect with hotel wifi and proxy it to my laptop to avoid logging into their systems multiple times.
+
 In previous versions I needed to install dhclient before any
 routing would occur. Now it "just works". You will see the BT icon on your phone probably has two dots on it now to reflect that data binding is occuring.
 
