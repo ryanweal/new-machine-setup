@@ -1,5 +1,14 @@
 # New machine setup
 
+## Operating System setup
+
+  - Latest Ubuntu distribution
+  - full disk encryption
+  - usb audio drivers
+  - bluetooth drivers
+  - powertop profile
+  - hosts file
+
 ## Install packages
 
   - chromuim-browser
@@ -43,3 +52,10 @@
  - adjust code devilspie recipe
  - adjust browser devilspie recipe
  - configure DPI/pixel density 
+
+## Work environments
+  - create SSH keys
+  - deploy public keys for certain hosts/servies
+  - git clone relevant project repos
+  - run docker-compose up one time per project to provision
+  - npm i each project
