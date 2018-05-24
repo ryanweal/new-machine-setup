@@ -41,6 +41,9 @@
  - disable autoplay
  - block caribou
 
+ - enable french and english dictionaries in settings
+ - set order of language preferences
+
 ## vscode extensions
 
   - vim
