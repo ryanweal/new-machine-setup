@@ -33,13 +33,16 @@
   - vagrant
   - vagrant scp
   - vagrant digital-ocean
-  - node.js
+  - nvm
+  - yarn
+  - now.sh
 
 ## Browser extensions
 
  - ublock
  - disable autoplay
- - block caribou
+ - block caribou (ubuntu specific)
+ - lastpass
 
  - enable french and english dictionaries in settings
  - set order of language preferences
