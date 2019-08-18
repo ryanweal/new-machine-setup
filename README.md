@@ -57,6 +57,12 @@ The Firefox browser config manages cookies by using multi-account containers. Mo
 
   - General:
     - Enable "Play DRM-controlled content"
+  - Search:
+    - Use address bar for search and navigation
+    - Default search engine: Duck Duck Go
+      - Provide search suggestions: active
+      - Show search suggestions in address bar results: active
+      - Show search suggestions ahead of browsing history in address bar results: disabled
   - Privacy:
     - Content Blocking: Strict
     - Send websites a “Do Not Track”: Always
