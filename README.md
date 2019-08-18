@@ -22,6 +22,8 @@
   - screen
   - lightdm (solves many rotation issues (and DPI?) on GPD Pocket and ASUS Transformer tablets)
   - xcalib (invert screen colors to be used for keyboard shortcuts listed below)
+  - ncdu (explore disk usage)
+  - htop (process explorer)
 
 ## External Apps
 
@@ -43,6 +45,7 @@
  - disable autoplay
  - block caribou (ubuntu specific)
  - lastpass
+ - noscript
 
  - enable french and english dictionaries in settings
  - set order of language preferences
@@ -68,6 +71,7 @@
  - configure DPI/pixel density 
 
 ## Work environments
+
   - create SSH keys
   - deploy public keys for certain hosts/servies
   - git clone relevant project repos
@@ -90,3 +94,9 @@ In previous versions I needed to install dhclient before any
 routing would occur. Now it "just works". You will see the BT icon on your phone probably has two dots on it now to reflect that data binding is occuring.
 
 If you are only using BT you will save some battery, so power down wifi if you do not need it. Bluetooth is closer to ISDN speeds so if you have big downloads use wifi.
+
+## Crontab
+
+    58 * * * * /usr/local/bin/check-instances 2>&1 >/dev/null
+    0 * * * * /usr/bin/killall firefox 2>&1 >/dev/null
+    0,40 * * * * /usr/bin/killall  /usr/lib/chromium-browser/chromium-browser 2>&1 >/dev/null
