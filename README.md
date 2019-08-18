@@ -41,14 +41,44 @@
 
 ## Browser extensions
 
- - ublock
- - disable autoplay
- - block caribou (ubuntu specific)
- - lastpass
- - noscript
+  - ublock
+  - disable autoplay
+  - block caribou (ubuntu specific)
+  - lastpass
+  - noscript
+  - multi-account containers (firefox specific)
 
  - enable french and english dictionaries in settings
  - set order of language preferences
+ 
+## Browser config (firefox)
+
+The Firefox browser config manages cookies by using multi-account containers. Most of the settings therefore are oriented around *preserving* cookies but removing any references for fresh sessions.
+
+  - General:
+    - Enable "Play DRM-controlled content"
+  - Privacy:
+    - Content Blocking: Strict
+    - Send websites a “Do Not Track”: Always
+    - Delete cookies and site data when Firefox is closed: Disabled
+    - Ask to save logins and passwords for websites: Disabled
+    - Autofill addresses: Disabled
+    - History: custom settings
+      - Use private browsing mode: Disabled
+      - Remember browsing and download history: active
+      - Remember search and form history: active
+      - Clear history when firefox closes
+      - Settings...
+        - When closed Firefox should automatically clear all:
+          - Browsing & Download History
+          - Active Logins
+          - Form & Search History
+          - Cache
+        - Do not delete:
+          - Cookies
+          - Site Preferences
+          - Offline Website Data
+    
 
 ## vscode extensions
 
