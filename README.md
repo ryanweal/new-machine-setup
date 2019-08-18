@@ -55,6 +55,13 @@
 
 The Firefox browser config manages cookies by using multi-account containers. Most of the settings therefore are oriented around *preserving* cookies but removing any references for fresh sessions.
 
+  - Touchscreen support
+    - Ubuntu launcher:
+      - `sudo gedit /usr/share/applications/firefox.desktop`
+      - `Exec=env MOZ_USE_XINPUT2=1 firefox %u`
+    - Command line:
+      - `env MOZ_USE_XINPUT2=1 firefox`
+
   - General:
     - Enable "Play DRM-controlled content"
   - Search:
