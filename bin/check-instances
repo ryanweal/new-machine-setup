@@ -1,0 +1,25 @@
+#!/bin/sh
+
+username=$(/usr/bin/whoami)
+pid=$(pgrep -u $username gnome-session)
+dbus=$(grep -z DBUS_SESSION_BUS_ADDRESS /proc/$pid/environ | sed 's/DBUS_SESSION_BUS_ADDRESS=//' )
+export DBUS_SESSION_BUS_ADDRESS=$dbus
+export HOME=/home/rcw
+export DISPLAY=:0
+
+notify-send "Browsers will be closed in 2 minutes!"
+
+dockers=`docker ps -q|wc -l`
+if [ "$dockers" -ne "0" ]; then
+  notify-send "Docker instances running: $dockers"
+fi
+
+vagrants=`ps aux|grep vagrant |grep -v grep|wc -l`
+if [ "$vagrants" -ne "0" ]; then
+  notify-send "Vagrant instances running: $vagrants"
+fi
+
+nodes=`ps a|grep node|grep -v code|grep -v 'grep'|wc -l`
+if [ "$nodes" -ne "0" ]; then
+  notify-send "Node instances running: $nodes"
+fi
