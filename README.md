@@ -112,6 +112,9 @@ The Firefox browser config manages cookies by using multi-account containers. Mo
  - adjust code devilspie recipe
  - adjust browser devilspie recipe
  - configure DPI/pixel density 
+ 
+ - disable some things: https://dev.to/prahladyeri/how-to-trim-your-ubuntu-installation-of-extra-fat-and-make-it-faster-58ib
+ - edit the startup list using `gnome-session-properties`
 
 ## Work environments
 
