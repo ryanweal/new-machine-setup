@@ -146,3 +146,8 @@ If you are only using BT you will save some battery, so power down wifi if you d
     58 * * * * /usr/local/bin/check-instances 2>&1 >/dev/null
     0 * * * * /usr/bin/killall firefox 2>&1 >/dev/null
     0,40 * * * * /usr/bin/killall  /usr/lib/chromium-browser/chromium-browser 2>&1 >/dev/null
+    
+## Sometimes
+
+    sudo swapoff -a
+    sudo powertop --auto-tune
