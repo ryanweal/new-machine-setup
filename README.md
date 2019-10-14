@@ -24,11 +24,12 @@
   - xcalib (invert screen colors to be used for keyboard shortcuts listed below)
   - ncdu (explore disk usage)
   - htop (process explorer)
+  - psensor (may need libappindicator1 and/or libappindicator3-1 to show in Ubuntu/Gnome toolbar)
 
 ## External Apps
 
   - VS Code
-  - Slack
+  - Slack (not really using this anymore, use the browser)
   - Zoom
   - docker
   - docker-compose
@@ -37,7 +38,7 @@
   - vagrant digital-ocean
   - nvm
   - yarn
-  - now.sh
+  - now.sh (npm package)
 
 ## Browser extensions
 
@@ -101,7 +102,7 @@ The Firefox browser config manages cookies by using multi-account containers. Mo
 
  - set theme in tweak tool
  - keyboard shorcuts:
-   - control-enter for terminal
+   - control-shift-enter for terminal (notion.so uses control-enter for opening table items)
    - F4 xcalib -i -a
    - F6 xrandr -o normal
    - F7 xrandr -o right
@@ -143,9 +144,10 @@ If you are only using BT you will save some battery, so power down wifi if you d
 
 ## Crontab
 
+    DISPLAY=:0
     58 * * * * /usr/local/bin/check-instances 2>&1 >/dev/null
-    0 * * * * /usr/bin/killall firefox 2>&1 >/dev/null
-    0,40 * * * * /usr/bin/killall  /usr/lib/chromium-browser/chromium-browser 2>&1 >/dev/null
+    0 17,18,19,20,21,22,23,0,1,2,3,4,5,6,7,8,9 * * * /usr/bin/killall firefox 2>&1 >/dev/null
+    0 17,18,19,20,21,22,23,0,1,2,3,4,5,6,7,8,9 * * * /usr/bin/killall  /usr/lib/chromium-browser/chromium-browser 2>&1 >/dev/null
     
 ## Sometimes
 
