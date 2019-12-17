@@ -25,12 +25,14 @@
   - ncdu (explore disk usage)
   - htop (process explorer)
   - psensor (may need libappindicator1 and/or libappindicator3-1 to show in Ubuntu/Gnome toolbar)
+    - gnome-tweak -> extensions -> ubuntu app indicators
+    - and/or `sudo apt purge indicator-common` (removes unity)
 
 ## External Apps
 
   - VS Code
   - Slack (not really using this anymore, use the browser)
-  - Zoom
+  - Zoom - configure and set to completely close app when quitting
   - docker
   - docker-compose
   - vagrant
