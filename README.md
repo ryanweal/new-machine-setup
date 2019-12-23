@@ -4,6 +4,7 @@
 
   - Latest Ubuntu distribution
   - full disk encryption
+  - /etc/fstab add noatime in front of errors, and after defaults
   - usb audio drivers (default install)
   - bluetooth drivers (default install)
   - powertop profile (manually generated)
@@ -121,7 +122,7 @@ The Firefox browser config manages cookies by using multi-account containers. Mo
 
 ## Work environments
 
-  - create SSH keys
+  - create SSH keys: ssh-keygen -t rsa -b 4096
   - deploy public keys for certain hosts/servies
   - git clone relevant project repos
   - run docker-compose up one time per project to provision
