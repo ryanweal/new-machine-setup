@@ -28,6 +28,8 @@
   - psensor (may need libappindicator1 and/or libappindicator3-1 to show in Ubuntu/Gnome toolbar)
     - gnome-tweak -> extensions -> ubuntu app indicators
     - and/or `sudo apt purge indicator-common` (removes unity)
+  - virtualbox, virtualbox-guest-additions-iso
+    - VBoxManage internalcommands createrawvmdk -rawdisk /dev/sdb -filename /opt/USB-Boot-SDB.vmdk
 
 ## External Apps
 
