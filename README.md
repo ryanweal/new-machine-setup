@@ -159,3 +159,9 @@ If you are only using BT you will save some battery, so power down wifi if you d
     sudo swapoff -a
     sudo powertop --auto-tune
     ssh -XC user@laptop  x2x -east -to :0.0
+    
+x2x with keep alive...
+    #!/bin/bash
+    x2x -west -from :0.0  &
+    while true; do echo -n "." ; sleep 1; done
+
