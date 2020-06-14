@@ -203,3 +203,15 @@ Capslock remapping (Ubuntu & Gnome)
     
     the Gnome way:
     gsettings set org.gnome.desktop.input-sources xkb-options "['caps:ctrl_modifier']"
+    
+Mail config
+
+    adapted from: https://gist.github.com/mike-burns/986fae26fd1fdb331b59
+
+    apt-get install msmtp
+    create .msmtprc
+    chmod 600 .msmtprc
+    edit .muttrc:
+    set sendmail="/usr/bin/msmtp"
+    set use_from=yes
+    set realname=""
