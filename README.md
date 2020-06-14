@@ -174,7 +174,13 @@ If you are only using BT you will save some battery, so power down wifi if you d
     x2x -west -from :0.0  &
     while true; do echo -n "." ; sleep 1; done
     
-    setxkbmap -option caps:ctrl_modifier
+    ~/.Xdefaults
+    xterm*selectToClipboard: true
 
     # install solarized theme for xerm
     xrdb ./Xdefaults && xterm -fullscreen &
+    
+    setxkbmap -option caps:ctrl_modifier
+    
+    /etc/default/keyboard variant:  
+    XKBOPTIONS="caps:ctrl_modifier"
