@@ -184,3 +184,6 @@ If you are only using BT you will save some battery, so power down wifi if you d
     
     /etc/default/keyboard variant:  
     XKBOPTIONS="caps:ctrl_modifier"
+    
+    the Gnome way:
+    gsettings set org.gnome.desktop.input-sources xkb-options "['caps:ctrl_modifier']"
