@@ -12,14 +12,18 @@
 
 ## Install packages
 
+Common Desktop Utilities
+
   - chromuim-browser
   - vlc
   - devilspie
   - gnome-shell
   - gnome-tweak-tool
   - gnome themes
-  
-  - tnux
+
+Command Line Utilities
+
+  - tmux
   - feh
   - git
   - htop (process explorer)
@@ -28,8 +32,11 @@
   - nettools (for ifconfig)
   - profanity (xmpp)
   - screen
+  - tree
   - w3m
   - xterm
+
+System Extras
   
   - lightdm (solves many rotation issues (and DPI?) on GPD Pocket and ASUS Transformer tablets)
   - xcalib (invert screen colors to be used for keyboard shortcuts listed below)
@@ -40,7 +47,7 @@
   - virtualbox, virtualbox-guest-additions-iso
     - VBoxManage internalcommands createrawvmdk -rawdisk /dev/sdb -filename /opt/USB-Boot-SDB.vmdk
 
-## External Apps
+## External Apps (not in Ubuntu repos, or best to get elsewhere)
 
   - VS Code
   #- Slack (not really using this anymore, use the browser)
@@ -163,23 +170,32 @@ If you are only using BT you will save some battery, so power down wifi if you d
     0 17,18,19,20,21,22,23,0,1,2,3,4,5,6,7,8,9 * * * /usr/bin/killall firefox 2>&1 >/dev/null
     0 17,18,19,20,21,22,23,0,1,2,3,4,5,6,7,8,9 * * * /usr/bin/killall  /usr/lib/chromium-browser/chromium-browser 2>&1 >/dev/null
     
-## Sometimes
+## Terminal Config & Tools
+
+Performance tuning
 
     sudo swapoff -a
     sudo powertop --auto-tune
+
+Virtual KVM switching
+
     ssh -XC user@laptop  x2x -east -to :0.0
     
     # x2x with keep alive...
     #!/bin/bash
     x2x -west -from :0.0  &
     while true; do echo -n "." ; sleep 1; done
+
+Tripped out xterm
     
     ~/.Xdefaults
     xterm*selectToClipboard: true
 
     # install solarized theme for xerm
     xrdb ./Xdefaults && xterm -fullscreen &
-    
+
+Capslock remapping (Ubuntu & Gnome)
+
     setxkbmap -option caps:ctrl_modifier
     
     /etc/default/keyboard variant:  
