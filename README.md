@@ -15,26 +15,35 @@
   - chromuim-browser
   - vlc
   - devilspie
-  - nettools (for ifconfig)
   - gnome-shell
   - gnome-tweak-tool
   - gnome themes
+  
+  - tnux
+  - feh
   - git
+  - htop (process explorer)
+  - keynav (mouse simulator for X)
+  - ncdu (explore disk usage)
+  - nettools (for ifconfig)
+  - profanity (xmpp)
   - screen
+  - w3m
+  - xterm
+  
   - lightdm (solves many rotation issues (and DPI?) on GPD Pocket and ASUS Transformer tablets)
   - xcalib (invert screen colors to be used for keyboard shortcuts listed below)
-  - ncdu (explore disk usage)
-  - htop (process explorer)
   - psensor (may need libappindicator1 and/or libappindicator3-1 to show in Ubuntu/Gnome toolbar)
     - gnome-tweak -> extensions -> ubuntu app indicators
     - and/or `sudo apt purge indicator-common` (removes unity)
+  
   - virtualbox, virtualbox-guest-additions-iso
     - VBoxManage internalcommands createrawvmdk -rawdisk /dev/sdb -filename /opt/USB-Boot-SDB.vmdk
 
 ## External Apps
 
   - VS Code
-  - Slack (not really using this anymore, use the browser)
+  #- Slack (not really using this anymore, use the browser)
   - Zoom - configure and set to completely close app when quitting
   - docker
   - docker-compose
@@ -160,8 +169,12 @@ If you are only using BT you will save some battery, so power down wifi if you d
     sudo powertop --auto-tune
     ssh -XC user@laptop  x2x -east -to :0.0
     
-x2x with keep alive...
+    # x2x with keep alive...
     #!/bin/bash
     x2x -west -from :0.0  &
     while true; do echo -n "." ; sleep 1; done
+    
+    setxkbmap -option caps:ctrl_modifier
 
+    # install solarized theme for xerm
+    xrdb ./Xdefaults && xterm -fullscreen &
