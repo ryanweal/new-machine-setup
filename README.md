@@ -215,3 +215,6 @@ Mail config
     set sendmail="/usr/bin/msmtp"
     set use_from=yes
     set realname=""
+    
+    productivity extras:
+    sudo apt-get install vdirsyncer todoman khard khal
