@@ -218,3 +218,8 @@ Mail config
     
     productivity extras:
     sudo apt-get install vdirsyncer todoman khard khal
+
+Ubuntu "wifi roaming aggressiveness"
+
+    iwconfig
+    iwconfig wlp1s0 sens -60 # percent or if negative, in decibels
