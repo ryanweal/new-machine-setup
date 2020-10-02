@@ -223,3 +223,14 @@ Ubuntu "wifi roaming aggressiveness"
 
     iwconfig
     iwconfig wlp1s0 sens -60 # percent or if negative, in decibels
+
+Solarized terminal theme
+
+    adapted from: https://github.com/maniat1k/Solarizedxterm/blob/master/.Xdefaults
+
+    xrdb .Xdefaults
+    xrdb .Xdefaults && xterm -fullscreen &
+
+`gnome-terminal`'s built-in Solarized is "ok" but you will want to set black &
+bright-black to both be #000000; may also be good to up the lightness of
+bright-blue and bright-magenta.
