@@ -232,5 +232,4 @@ Solarized terminal theme
     xrdb .Xdefaults && xterm -fullscreen &
 
 `gnome-terminal`'s built-in Solarized is "ok" but you will want to set black &
-bright-black to both be #000000; may also be good to up the lightness of
-bright-blue and bright-magenta.
+bright-black to both be #000000; check the box to enable bold for lightness.
