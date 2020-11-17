@@ -119,6 +119,10 @@ The Firefox browser config manages cookies by using multi-account containers. Mo
 
   - vim
 
+## vscode settings
+
+window.titleBarStyle = custom
+
 ## Configuration
 
  - set theme in tweak tool
