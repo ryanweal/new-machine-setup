@@ -35,6 +35,7 @@ Command Line Utilities
   - tree
   - w3m
   - xterm
+  - newsboat (rss reader)
 
 System Extras
   
