@@ -36,6 +36,7 @@ Command Line Utilities
   - w3m
   - xterm
   - newsboat (rss reader)
+  - epy (ebook reader) https://github.com/wustho/epy
 
 System Extras
   
