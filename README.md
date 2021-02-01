@@ -71,6 +71,8 @@ System Extras
   - lastpass
   - noscript
   - multi-account containers (firefox specific)
+  - new tab override (allow custom homepage for new tabs) :
+    - https://addons.mozilla.org/en-US/firefox/addon/new-tab-override/
 
  - enable french and english dictionaries in settings
  - set order of language preferences
@@ -78,6 +80,8 @@ System Extras
 ## Browser config (firefox)
 
 The Firefox browser config manages cookies by using multi-account containers. Most of the settings therefore are oriented around *preserving* cookies but removing any references for fresh sessions.
+
+The amount of configuration is excessive and pathetic at the same time. If it wasn't for MultiAccount tabs I would stop using Firefox... anyway...
 
   - Touchscreen support
     - Ubuntu launcher:
