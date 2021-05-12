@@ -147,6 +147,7 @@ window.titleBarStyle = custom
  
  - disable some things: https://dev.to/prahladyeri/how-to-trim-your-ubuntu-installation-of-extra-fat-and-make-it-faster-58ib
  - edit the startup list using `gnome-session-properties`
+ - disable horrible Nautilus keyboard (search system wide) behavior - `gsettings set org.gnome.nautilus.preferences recursive-search 'never'`
 
 ## Work environments
 
