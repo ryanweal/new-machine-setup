@@ -37,6 +37,7 @@ Command Line Utilities
   - xterm
   - newsboat (rss reader)
   - epy (ebook reader) https://github.com/wustho/epy
+  - vlock
 
 System Extras
   
@@ -232,6 +233,8 @@ Mail config
 
 Ubuntu "wifi roaming aggressiveness"
 
+- No longer using this setting, use wires!
+
     iwconfig
     iwconfig wlp1s0 sens -60 # percent or if negative, in decibels
 
@@ -249,26 +252,26 @@ Customize TTY theme... and eliminate X from your life...
 
 - Add color overrides to .bashrc described here: https://askubuntu.com/questions/147462/how-can-i-change-the-tty-colors :
 
-if [ "$TERM" = "linux" ]; then
-    echo -en "\e]P0000000" #black
-    echo -en "\e]P8454545" #darkgrey
-    echo -en "\e]P1D75F5F" #darkred
-    echo -en "\e]P9CC896D" #red
-    echo -en "\e]P26C7E55" #darkgreen
-    echo -en "\e]PAC4DF90" #green
-    echo -en "\e]P3CAAF2B" #brown
-    echo -en "\e]PBFFE080" #yellow
-    echo -en "\e]P47FB8D8" #darkblue
-    echo -en "\e]PCB8DDEA" #blue
-    echo -en "\e]P5956D9D" #darkmagenta
-    echo -en "\e]PDC18FCB" #magenta
-    echo -en "\e]P64c8ea1" #darkcyan
-    echo -en "\e]PE6bc1d0" #cyan
-    echo -en "\e]P7808080" #lightgrey
-    echo -en "\e]PFCDCDCD" #white
-    clear #for background artifacting
-    echo Hello
-fi
+    if [ "$TERM" = "linux" ]; then
+        echo -en "\e]P0000000" #black
+        echo -en "\e]P8454545" #darkgrey
+        echo -en "\e]P1D75F5F" #darkred
+        echo -en "\e]P9CC896D" #red
+        echo -en "\e]P26C7E55" #darkgreen
+        echo -en "\e]PAC4DF90" #green
+        echo -en "\e]P3CAAF2B" #brown
+        echo -en "\e]PBFFE080" #yellow
+        echo -en "\e]P47FB8D8" #darkblue
+        echo -en "\e]PCB8DDEA" #blue
+        echo -en "\e]P5956D9D" #darkmagenta
+        echo -en "\e]PDC18FCB" #magenta
+        echo -en "\e]P64c8ea1" #darkcyan
+        echo -en "\e]PE6bc1d0" #cyan
+        echo -en "\e]P7808080" #lightgrey
+        echo -en "\e]PFCDCDCD" #white
+        clear #for background artifacting
+        echo Hello
+    fi
 
 - sudo su
 - dumpkeys > dumpkeys.txt
@@ -279,3 +282,11 @@ fi
 
 - Adjust brightness
     echo 4 > /sys/class/backlight/*/brightness
+    
+- .tmux.conf for lockscreen:
+
+    set-option -g lock-command vlock
+    set-option -g lock-after-time 0
+    bind y lock-session
+    # then do source-file .tmux.conf to reload daemon
+
