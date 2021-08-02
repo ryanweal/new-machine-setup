@@ -267,8 +267,8 @@ Customize TTY theme... and eliminate X from your life...
           echo -en "\e]PDC18FCB" #magenta
           echo -en "\e]P64c8ea1" #darkcyan
           echo -en "\e]PE6bc1d0" #cyan
-          echo -en "\e]P7808080" #lightgrey
-          echo -en "\e]PFCDCDCD" #white
+          echo -en "\e]P7D2D2D2" #lightgrey
+          echo -en "\e]PFFAFAFA" #white
           clear #for background artifacting
           echo Hello
       fi

@@ -49,5 +49,7 @@ XTerm*color6: #4c8ea1
 XTerm*color14: #6bc1d0
 
 !white
-XTerm*color7: #808080
-XTerm*color15: #cdcdcd
+#XTerm*color7: #808080
+XTerm*color7: #D2D2D2
+#XTerm*color15: #cdcdcd
+XTerm*color15: #FAFAFA
