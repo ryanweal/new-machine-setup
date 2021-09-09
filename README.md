@@ -184,12 +184,12 @@ If you are only using BT you will save some battery, so power down wifi if you d
     
 ## Terminal Config & Tools
 
-Performance tuning
+### Performance tuning
 
     sudo swapoff -a
     sudo powertop --auto-tune
 
-Virtual KVM switching
+### Virtual KVM switching
 
     ssh -XC user@laptop  x2x -east -to :0.0
     
@@ -198,7 +198,7 @@ Virtual KVM switching
     x2x -west -from :0.0  &
     while true; do echo -n "." ; sleep 1; done
 
-Tripped out xterm
+### Tripped out xterm
     
     ~/.Xdefaults
     xterm*selectToClipboard: true
@@ -206,7 +206,15 @@ Tripped out xterm
     # install solarized theme for xerm
     xrdb ./Xdefaults && xterm -fullscreen &
 
-Capslock remapping (Ubuntu & Gnome)
+### Kiosk mode
+
+    startx chromium --kiosk --
+    
+    ~/.xinitrc:
+    #!/bin/sh
+    exec chromium --kiosk
+
+### Capslock remapping (Ubuntu & Gnome)
 
     setxkbmap -option caps:ctrl_modifier
     
@@ -216,7 +224,7 @@ Capslock remapping (Ubuntu & Gnome)
     the Gnome way:
     gsettings set org.gnome.desktop.input-sources xkb-options "['caps:ctrl_modifier']"
     
-Mail config
+### Mail config
 
     adapted from: https://gist.github.com/mike-burns/986fae26fd1fdb331b59
 
@@ -231,14 +239,14 @@ Mail config
     productivity extras:
     sudo apt-get install vdirsyncer todoman khard khal
 
-Ubuntu "wifi roaming aggressiveness"
+### Ubuntu "wifi roaming aggressiveness"
 
 - No longer using this setting, use wires!
 
     iwconfig
     iwconfig wlp1s0 sens -60 # percent or if negative, in decibels
 
-Solarized terminal theme
+### xterm Solarized terminal theme
 
     adapted from: https://github.com/maniat1k/Solarizedxterm/blob/master/.Xdefaults
 
@@ -248,7 +256,7 @@ Solarized terminal theme
 `gnome-terminal`'s built-in Solarized is "ok" but you will want to set black &
 bright-black to both be #000000; check the box to enable bold for lightness.
 
-Customize TTY theme... and eliminate X from your life...
+### TTY theme... and eliminate X from your life...
 
 - Add color overrides to .bashrc described here: https://askubuntu.com/questions/147462/how-can-i-change-the-tty-colors :
 
@@ -273,6 +281,8 @@ Customize TTY theme... and eliminate X from your life...
           echo Hello
       fi
 
+### TTY Keyboard Mappings
+
 - sudo su
 - dumpkeys > dumpkeys.txt
 - find keycode 58, set to Control:
@@ -280,9 +290,13 @@ Customize TTY theme... and eliminate X from your life...
 - sudo loadkeys dumpkeys.txt
 - need loadkeys to run at startup...
 
+### TTY Brightness settings
+
 - Adjust brightness
     echo 4 > /sys/class/backlight/*/brightness
-    
+
+### TTY Lockscreen
+
 - .tmux.conf for lockscreen:
 
       set-option -g lock-command vlock
@@ -290,4 +304,3 @@ Customize TTY theme... and eliminate X from your life...
       bind y lock-session
 
   then do (ctrl-b) source-file .tmux.conf to reload daemon
-
