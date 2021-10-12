@@ -74,6 +74,7 @@ System Extras
 - /etc/default/mouseemu
 - SCROLL="-scroll 100"
 - (set to alt-right, determeined using `showkey`)
+- service mouseemu restart
 - hold alt-right and move cursor to scroll :)
 
 - set trackpoint/mouse to be fastest possible setting
