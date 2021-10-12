@@ -64,6 +64,14 @@ System Extras
   - yarn
   - now.sh (npm package)
 
+## Startup erogonomics
+
+- gnome-session-properties
+- add keynav
+- add xterm fullscreen (something like: cd /home/rcw && xrdb .Xdefaults && xterm -fullscreen &)
+
+- set trackpoint/mouse to be fastest possible setting
+
 ## Browser extensions
 
   - ublock
