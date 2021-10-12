@@ -28,6 +28,7 @@ Command Line Utilities
   - git
   - htop (process explorer)
   - keynav (mouse simulator for X)
+  - mouseemu (allow scrolling using mouse with key modifier)
   - ncdu (explore disk usage)
   - nettools (for ifconfig)
   - profanity (xmpp)
@@ -69,6 +70,11 @@ System Extras
 - gnome-session-properties
 - add keynav
 - add xterm fullscreen (something like: cd /home/rcw && xrdb .Xdefaults && xterm -fullscreen &)
+
+- /etc/default/mouseemu
+- SCROLL="-scroll 100"
+- (set to alt-right, determeined using `showkey`)
+- hold alt-right and move cursor to scroll :)
 
 - set trackpoint/mouse to be fastest possible setting
 
