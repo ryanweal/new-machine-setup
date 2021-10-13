@@ -87,8 +87,6 @@ System Extras
   - lastpass
   - noscript
   - multi-account containers (firefox specific)
-  - new tab override (allow custom homepage for new tabs) :
-    - https://addons.mozilla.org/en-US/firefox/addon/new-tab-override/
 
  - enable french and english dictionaries in settings
  - set order of language preferences
