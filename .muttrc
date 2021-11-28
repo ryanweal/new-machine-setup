@@ -1,0 +1,34 @@
+set from = "Ryan Weal <ryan@kafei.ca>"
+#set imap_user=""
+#set imap_pass=""
+set spoolfile="imaps://mail.messagingengine.com"
+set folder="imaps://mail.messagingengine.com/INBOX"
+set record="imaps://mail.messagingengine.com/Sent"
+set postponed="imaps://mail.messagingengine.com/Drafts"
+set read_inc=1000
+set write_inc=1000
+set mbox="+Archive"
+set mail_check = 5
+auto_view text/html
+set sendmail="/usr/bin/msmtp"
+set use_from=yes
+set realname=""
+set editor=vim
+
+color hdrdefault blue black
+color quoted blue black
+color signature yellow black
+color attachment yellow black
+color prompt brightmagenta black
+color message green black
+color error red black
+color indicator black blue
+color status black green
+color tree white black
+color normal brightwhite black
+color markers red black
+color search white black
+color tilde brightmagenta black
+color index blue black ~F
+color index brightgreen black "~N|~O"
+
