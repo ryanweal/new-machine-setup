@@ -71,13 +71,20 @@ System Extras
 - add keynav
 - add xterm fullscreen (something like: cd /home/rcw && xrdb .Xdefaults && xterm -fullscreen &)
 
+No longer doing mouseemu but here was the old config:
+
 - /etc/default/mouseemu
 - SCROLL="-scroll 100"
 - (set to alt-right, determeined using `showkey`)
 - service mouseemu restart
 - hold alt-right and move cursor to scroll :)
 
-- set trackpoint/mouse to be fastest possible setting
+ThinkPad USB keyboard trackpoint config:
+
+- Set trackpoint to fastest possible setting: 9.
+- /etc/udev/rules.d/10-trackpoint.rules:
+- ACTION=="add", SUBSYSTEM=="hid", DRIVERS=="lenovo", ATTR{sensitivity}="9"
+- save, unplug, replug. Done.
 
 ## Browser extensions
 
