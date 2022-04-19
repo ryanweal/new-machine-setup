@@ -178,6 +178,12 @@ window.titleBarStyle = custom
   - run docker-compose up one time per project to provision
   - npm i each project
 
+## Timezones
+
+- https://github.com/mibus/MultiClock edit extension.js to add custom TZ to toolbar
+- `gnome-clocks` standalone clock app adds to calendar click on clock
+- `gworldclock`, `sunclock` ... the classics
+
 ## Connectivity
 
   - On Android, go to Settings, ...More, connection sharing, enable Bluetooth sharing
